@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Turistická aplikace</string>
+    <string name="title_activity_maps">Mapa míst</string>
+    <string name="title_activity_statistika">Statistika míst</string>
+    <string name="title_activity_upravit">Upravit místo</string>
+    <string name="title_activity_detail">Detail místa</string>
+    <string name="title_activity_pridat">Přidat místo</string>
+    <string name="title_activity_navstivena">Navštívené místo</string>
+    <string name="title_button_sdilet">Sdilet místo</string>
+    <string name="title_button_trasa">Hledat trasu</string>
+    <string name="title_button_misto">Jsem na místě!</string>
+    <string name="title_button_fotografie">Pořídit fotografii</string>
+    <string name="title_button_ulozitNavstiveneMisto">Uložit do databáze</string>
+    <string name="title_textView_hodnoceni">Hodnocení místa</string>
+    <string name="title_radioButton_Vylet">Typy na výlet</string>
+    <string name="title_radioButton_Navstivene">Navštívená místa</string>
+    <string name="title_btn_ukazMista">Zobraz místa</string>
+    <string name="btn_upravit">Upravit</string>
+    <string name="btn_smazat">Smazat</string>
+    <string name="btn_ulozit_zmeny">Uložit změny</string>
+    <string name="btn_zpet_na_mapu">Návrat na mapu</string>
+    <string name="rb_celaCR">Vybraná místa ČR</string>
+    <string name="rb_desetNej">10 nejbližších</string>
+    <string name="rb_stoNej">100 nejbližších</string>
+    <string name="btn_statistika">Statistiky výletů</string>
+    <string name="btn_detail">Detail</string>
+
+
+    <string-array name="typy_map_spinner">
+        <item>Normální</item>
+        <item>Satelitní</item>
+        <item>Hybridní</item>
+        <item>Terénní</item>
+    </string-array>
+    <string name="title_activity_detail_place1">Map</string>
+    <string name="title_activity_update_navstivene">UpdateNavstiveneActivity</string>
+</resources>

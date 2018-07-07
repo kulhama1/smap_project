@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spiner_vyber_typu_mapy"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeight"
+            android:entries="@array/typy_map_spinner" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroupVyberMarkeru"
+            android:layout_width="168dp"
+            android:layout_height="66dp"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radioButtonVylety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/title_radioButton_Vylet" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNavstivene"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_radioButton_Navstivene" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radioGroupVyberVzdalenosti"
+            android:layout_width="260dp"
+            android:layout_height="66dp"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radioButtonCelaCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/rb_celaCR" />
+
+            <RadioButton
+                android:id="@+id/radioButton10nejblizsich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rb_desetNej" />
+
+            <RadioButton
+                android:id="@+id/radioButton100nejblizssich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rb_stoNej" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonUkazka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_statistika" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</LinearLayout>
